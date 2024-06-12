@@ -1,0 +1,10 @@
+.menu-bar {
+  height: calc(88vh - 7.5rem);
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-size: 1.5rem;
+  padding: 3rem 0;
+  // background-color: none;
+}
