@@ -57,14 +57,13 @@ class RAM(models.Model):
     def __str__(self):
         return self.product_id
 
-class Collection(models.Model):
-    collection_id = models.IntegerField('id', default='')
-    collection_name = models.CharField('name', max_length=50, default='')
+class Collectionss(models.Model):
+    name = models.CharField('name', max_length=30, default='')
     user_id = models.IntegerField('user id', default='')
     product_id = models.IntegerField('product id', default='')
 
     def __str__(self):
-        return self.collection_id
+        return self.user_id
 
 class Cart(models.Model):
     user_id = models.IntegerField('cart id', default='') #uesr id is equl to cart id
